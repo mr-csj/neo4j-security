@@ -1,0 +1,24 @@
+<div class="addInfBtn">
+    <h3 class="itemTit"><span>用户列表</span></h3>
+    <div class="dataDetailList mt-12">
+        <table class="dataListTab">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>日期</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user:${users}">
+                    <td th:text="${user.id}"></td>
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.create}? ${#dates.format(user.create,'yyyy-MM-dd HH:mm:ss')} :''"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">关闭</a>
+    </div>
+</div>

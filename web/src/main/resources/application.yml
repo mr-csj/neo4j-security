@@ -1,0 +1,10 @@
+server:
+  port: 80
+
+securityconfig:
+  logoutsuccssurl: /
+  permitall: /rest/**,/bbs**
+  deniedpage: /deny
+  urlroles: /**/new/** = admin;
+            /**/edit/** = admin,editor;
+            /**/delete/** = admin

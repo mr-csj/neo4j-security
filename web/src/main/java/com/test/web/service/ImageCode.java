@@ -7,10 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * @author Bill
- * @since 2011
- */
 public class ImageCode {
 
     private static char mapTable[] = {

@@ -16,7 +16,6 @@ public class Unit {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date create;
 
-
     public Unit() {
     }
 
